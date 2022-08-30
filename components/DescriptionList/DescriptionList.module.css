@@ -1,0 +1,44 @@
+/* Note: this styling is not compatible with "multiple terms, single definition". */
+.horizontal {
+  display: grid;
+  grid-template-columns: var(--column-width) 1fr;
+  column-gap: var(--gap);
+  row-gap: calc(var(--gap) / 3);
+}
+
+.clamped {
+  grid-template-columns: var(--column-width) 1fr;
+}
+
+.horizontal,
+.vertical {
+  margin: 0;
+}
+
+.horizontal dd,
+.vertical dd {
+  margin: 0;
+}
+
+.horizontal dt,
+.vertical dt {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  font-family: var(--sans);
+  letter-spacing: 0.12rem;
+}
+
+.vertical dt,
+.vertical dd {
+  line-height: 32px;
+}
+
+.horizontal dt {
+  text-align: right;
+  line-height: 26px;
+}
+
+.vertical dt {
+  margin-bottom: -0.75rem;
+}

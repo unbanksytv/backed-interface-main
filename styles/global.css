@@ -1,0 +1,112 @@
+:root {
+  /* colors */
+  --highlight-clickable-100: #0000ee;
+  --highlight-clickable-50: #adadff;
+  --highlight-clickable-20: #d6d6ff;
+  --highlight-clickable-10: #e8e5f1;
+  --highlight-clickable-7: #ececfe;
+  --highlight-clickable-5: #f0f0fe;
+  --highlight-visited-100: #75187c;
+  --highlight-visited-10: #eadbeb;
+  --highlight-visited-7: #f2e9f2;
+  --highlight-visited-5: #f7f1f7;
+  --highlight-active-50: #ff7a00;
+  --highlight-active-20: #fffb58;
+  --highlight-active-10: #fffdba;
+  --highlight-active-5: #fffbd3;
+  --highlight-alert-100: #db004d;
+  --highlight-alert-10: #ffeff5;
+  --highlight-success-100: #317049;
+  --highlight-success-10: #e1ffef;
+  --neutral-100: #111111;
+  --neutral-50: #ab9b96;
+  --neutral-30: #ebf9ff;
+  --neutral-20: #e6ded6;
+  --neutral-10: #f4f0ec;
+  --neutral-5: #f9f7f5;
+  --optimistic-red-10: #fff5f4;
+  --optimistic-red-100: #fe0420;
+  --polygon-purple-10: #f8f5ff;
+  --polygon-purple-100: #7b3fe4;
+
+  /* layout */
+  --max-width-header: 1224px;
+  --max-width: 1100px;
+  --column-width: 130px;
+  --line-height: 1.6;
+
+  /* padding and gaps */
+  --padding-button: 0.3rem 1rem;
+  --padding-container: 2.5rem;
+  --padding-loan-card: 7px 21px 14px 21px;
+  --gap: 2.5rem;
+
+  /* backgrounds */
+  --background-radial-gradient: radial-gradient(#ffffff, #f6f2f0);
+  --background-fieldset: rgba(255, 255, 255, 0.8);
+  --background-white: #ffffff;
+
+  /* shadows */
+  --box-shadow: 0 0 20px 0px rgb(171 155 150 / 20%);
+  --box-shadow-blue: 0px 0px 20px rgba(0, 0, 238, 0.1);
+  --box-shadow-red: 0px 0px 20px rgba(238, 0, 0, 0.1);
+
+  /* border styles */
+  --border-radius-small: 0.3rem;
+  --border-radius-large: 0.86rem;
+
+  /* font styles */
+  --serif: 'Times New Roman', Times, serif;
+  --sans: 'GT Maru Regular', Helvetica, sans-serif;
+  --mono: 'GT Maru Mono', monospace;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --font-small: 11px;
+  --font-medium: 15px;
+  --font-large: 18px;
+  --font-huge: 2.6rem;
+
+  /* component specific dimensions */
+  --modal-width-narrow: 460px;
+  --modal-width-regular: 580px;
+  --column-width: 130px;
+}
+
+html,
+body {
+  font-family: var(--mono);
+  line-height: var(--line-height);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  background: var(--background-white);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--font-huge);
+  font-weight: var(--weight-light);
+}
+
+h2,
+h3 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-regular);
+}
+
+a {
+  color: var(--highlight-clickable-100);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--highlight-visited-100);
+}
+
+p {
+  line-height: 2rem;
+}

@@ -1,0 +1,16 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background: var(--background-radial-gradient);
+}
+
+.app-wrapper-community {
+  composes: app-wrapper;
+}
+
+.app-wrapper-community > nav {
+  background-color: transparent;
+}

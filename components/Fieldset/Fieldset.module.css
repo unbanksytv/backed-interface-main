@@ -1,0 +1,14 @@
+.standard-fieldset {
+  border: none;
+  background: var(--background-fieldset);
+  width: 100%;
+  padding: var(--padding-container);
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.legend {
+  line-height: 0;
+  font-size: var(--font-large);
+  text-transform: capitalize;
+}

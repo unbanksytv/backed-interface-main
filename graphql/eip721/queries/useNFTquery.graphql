@@ -1,0 +1,19 @@
+query Nfts($address: ID!) {
+  account(id: $address) {
+    id
+    tokens {
+      id
+      identifier
+      uri
+      registry {
+        name
+      }
+      approvals {
+        id
+        approved {
+          id
+        }
+      }
+    }
+  }
+}

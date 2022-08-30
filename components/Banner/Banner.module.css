@@ -1,0 +1,79 @@
+.banner {
+  min-height: 40px;
+  width: 100%;
+  font-family: var(--sans);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+  padding: var(--padding-button);
+  transition: opacity 200ms ease;
+}
+
+.banner-enter {
+  opacity: 0;
+}
+
+.error {
+  composes: banner;
+  background-color: var(--highlight-alert-10);
+}
+
+.success {
+  composes: banner;
+  background-color: var(--highlight-success-10);
+}
+
+.info {
+  composes: banner;
+  background-color: var(--highlight-active-5);
+}
+
+.optimism {
+  composes: banner;
+  background-color: var(--optimistic-red-10);
+}
+
+.polygon {
+  composes: banner;
+  background-color: var(--polygon-purple-10);
+}
+
+.inner {
+  text-align: center;
+}
+
+.inner > * {
+  margin: 0;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+}
+
+.error > .close > svg {
+  fill: var(--highlight-alert-100);
+}
+
+.success > .close > svg {
+  fill: var(--highlight-success-100);
+}
+
+.info > .close > svg {
+  fill: var(--neutral-100);
+}
+
+.optimism > .close {
+  background-color: var(--optimistic-red-100);
+}
+.optimism button {
+  color: var(--optimistic-red-100);
+}
+
+.polygon > .close {
+  background-color: var(--polygon-purple-100);
+}
+.polygon button {
+  color: var(--polygon-purple-100);
+}
